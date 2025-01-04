@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../../components/Hero/Hero';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import Skills from '../../components/Skills/Skills';
+import MyProjects from '../../components/MyProjects/MyProjects';
 
 const Home = () => {
     return (
@@ -15,6 +16,9 @@ const Home = () => {
            </div>
            <div className='py-10 max-w-screen-lg mx-auto'>
             <Skills></Skills>
+           </div>
+           <div>
+            <MyProjects></MyProjects>
            </div>
         </div>
     );

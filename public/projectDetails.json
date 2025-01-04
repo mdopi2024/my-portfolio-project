@@ -1,0 +1,50 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "KnowledgeNest",
+        "description": "A system for managing book borrowing and returning processes for students.",
+        "features": [
+          "Browse and search books",
+          "Borrow and return books with automated notifications",
+          "Admin panel to manage inventory"
+        ],
+        "technologies": ["React", "Node.js", "Express"],
+        "image": "https://i.ibb.co/99ZTkqd/Screenshot-2025-01-04-153026.png",
+        "liveDemo": "https://example.com/library-system",
+        "github_client": "https://github.com/mdopi2024/assignment-11-client?tab=readme-ov-file",
+        "github_server": "https://github.com/mdopi2024/assignment-11-server"
+      },
+      {
+        "id": 2,
+        "name": "NestStep Visa",
+        "description": "A web application that simplifies visa requirements, application, and tracking processes.",
+        "features": [
+          "Search visa requirements by country",
+          "Apply for visas online",
+          "Track application status in real-time"
+        ],
+        "technologies": ["React", "Node.js", "Express", "Axios"],
+        "image": "https://i.ibb.co/12ctKC1/Screenshot-2025-01-04-152851.png",
+        "liveDemo": "https://chic-marigold-d6cd06.netlify.app",
+        "github_client": "https://github.com/mdopi2024/assignment-10-client?tab=readme-ov-file",
+        "github_server": "https://github.com/mdopi2024/assignment-10-server"
+      },
+      {
+        "id": 3,
+        "name": "Lingo Bing",
+        "description": "A web application designed to help users learn languages through interactive lessons, quizzes, and progress tracking.",
+        "features": [
+          "Language selection",
+          "Personalized lesson plans",
+          "Real-time quizzes"
+        ],
+        "technologies": ["React", "Node.js", "Express", "Axios"],
+        "image": "https://i.ibb.co/8cYXp82/Screenshot-2025-01-04-152603.png",
+        "liveDemo": "https://bucolic-zabaione-4df946.netlify.app",
+        "github_client": "https://github.com/mdopi2024/assignment-9?tab=readme-ov-file",
+        "github_server": ""
+      }
+    ]
+  }
+  

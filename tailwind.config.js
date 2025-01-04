@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        knowledge:"url('./src/assets/knolagenest.png')",
+        knowledge:"url('./src/assets/newtStepVisa.png')",
+        knowledge:"url('./src/assets/lingo-bingo.png')",
+      }
+    },
   },
   plugins: [require('daisyui')],
 }
