@@ -3,6 +3,7 @@ import Hero from '../../components/Hero/Hero';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import Skills from '../../components/Skills/Skills';
 import MyProjects from '../../components/MyProjects/MyProjects';
+import ContackWithMe from '../../components/ContackWithMe/ContackWithMe';
 
 const Home = () => {
     return (
@@ -19,6 +20,9 @@ const Home = () => {
            </div>
            <div>
             <MyProjects></MyProjects>
+           </div>
+           <div>
+            <ContackWithMe></ContackWithMe>
            </div>
         </div>
     );
