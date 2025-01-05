@@ -1,8 +1,30 @@
 import Lottie from 'lottie-react';
-import React from 'react';
+import React, { useRef } from 'react';
 import gmail from '../../assets/animation/Animation - 1735997786051.json'
 
+import emailjs from '@emailjs/browser';
+
 const ContackWithMe = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_0p86iit', 'template_nloykpm', form.current, {
+          publicKey: 'Q9d3XCSKak1DDPg6C',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    }
+
     return (
         <div className='py-12'>
             <div className='text-center max-w-2xl mx-auto'>
@@ -19,13 +41,13 @@ const ContackWithMe = () => {
 
 
                 <div className='w-full py-10  '>
-                    <div className='flex flex-col max-w-lg gap-6'>
-                        <input type="text" placeholder="Name" className="input input-bordered w-full" />
-                        <input type="email" placeholder="Email" className="input input-bordered w-full " />
-                        <textarea className="textarea textarea-bordered h-[100px]" placeholder="Your message"></textarea>
+                    <form ref={form} onSubmit={sendEmail} className='flex flex-col max-w-md gap-6'>
+                        <input type="text" placeholder="Name"  name="user_name" className="input input-bordered w-full" />
+                        <input type="email" placeholder="Email" name="user_email" className="input input-bordered w-full " />
+                        <textarea className="textarea textarea-bordered h-[100px]" name="message" placeholder="Your message"></textarea>
                         <input className='input input-bordered w-full bg-[#00B4FF] text-white font-bold ' type="submit" value="Submit" />
 
-                    </div>
+                    </form>
                 </div>
 
             </div>
